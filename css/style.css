@@ -1,0 +1,93 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.1fr 1fr 0.1fr;
+      grid-template-areas:
+          "Cabecalho"
+          "Container_principal"
+          "Container_footer"; 
+      height: 100vh; 
+       
+      background-color: #FCE6A8;
+}
+
+.Cabecalho {
+       display: flex;
+       grid-area: Cabecalho;
+       background-color: #C3CFD9;
+       margin: 3px;
+       justify-content: center; 
+       align-items : center; 
+}
+
+.Cabecalho__Menu {
+    display: flex;  
+    justify-content: center; 
+    align-items : center;    
+    width: 100%;
+}
+
+.Cabecalho__Menu__link {
+    display: flex;  
+    flex-flow: 0;   
+    width: 15%;
+    margin-left: 7px;
+}
+
+.Cabecalho__Menu__Titulo {
+    display: flex;  
+    justify-content: center; 
+    align-items : center;    
+    flex-flow: 1;
+    width: 85%;
+    font-size: 20px;
+}
+
+.Cabecalho__Menu__item  { 
+    display: flex;
+    background-color: #788895;
+    margin: 3px 2px;
+    border-radius: 2px;
+    width: 50px;
+    padding: 5px;
+    justify-content: center; 
+    align-items : center;  
+}
+
+.Cabecalho__Menu__item > a {
+    text-decoration : none; 
+    color: white;
+    font-size: 10px;
+}
+
+.Principal {
+    display: flex;
+    grid-area: Container_principal;
+    justify-content: center; 
+    align-items : center;    
+    background-color: #C3CFD9;
+}
+
+.Container_footer {
+    display: flex;
+    grid-area: Container_footer;
+    background-color: #C3CFD9;
+    justify-content: center; 
+    margin: 3px;  
+}
+
+.Container_footer__Autor {
+    display: flex;  
+    flex-direction: column;
+    align-items : center;    
+}
+
+.Container_footer__Autor > p {
+    font-size: 10px;      
+    padding: 2px 0px 2px 0px;
+}
