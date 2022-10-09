@@ -39,7 +39,7 @@ body{
 .Cabecalho > p {  
     flex-grow: 1;
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .Cabecalho__Menu__item  { 

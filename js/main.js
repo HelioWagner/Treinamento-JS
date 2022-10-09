@@ -55,6 +55,18 @@ async function buscarEMostrarPersonagem() {
  
  function pegaValorDoInput(seletorInput) {
      const valor = document.querySelector(seletorInput).value 
+     if (isNaN(valor) ) {
+        alert("Deve ser informado valor numérico. Por favor verifique!!")
+        valor = null
+        return false
+     }
+
+     if (valor == "") {
+        alert("Deve ser informado valor de 1 a 899. Por favor verifique!!")
+        valor = null
+        return false
+     }
+
      return valor
  
  }
