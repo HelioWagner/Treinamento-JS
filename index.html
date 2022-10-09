@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
     <title>Principal - Treinamento JS</title>
 </head>
 <body>
@@ -12,10 +13,10 @@
          <nav class="Cabecalho__Menu">          
             <div class="Cabecalho__Menu__link">
                 <div class="Cabecalho__Menu__item">
-                    <a href="">Principal</a>
+                    <a href="index.html">Principal</a>
                 </div>
                 <div class="Cabecalho__Menu__item">
-                    <a href="">Contato</a>
+                    <a href="contato.html">Contato</a>
                 </div>   
             </div>     
          </nav>  
@@ -24,9 +25,9 @@
        <main class="Principal" >
            <div class="Principal__Soma">
                <div class="Principal__Soma_Dados">
-                    <input type="text" placeholder="Digite um número">
-                    <input type="text" placeholder="Digite um número">
-                    <button>Somar</button>
+                    <input class="valor__Digitado__Soma" type="text" placeholder="Digite um número">
+                    <input class="valor__Digitado__Soma" type="text" placeholder="Digite um número">
+                    <button class="Calcular__Soma">Somar</button>
                </div>
                <div class="Principal__Soma__Resultado">
                   <p>Resultado:</p>
@@ -37,13 +38,13 @@
            </div>  
            <div class="Principal__pokemon">
             <div class="Principal__pokemon__Dados">
-                 <input type="text" placeholder="ID Pokemon">
-                 <button>Somar</button>
+                 <input id="identificadorPersonagem"  type="text" placeholder="ID Pokemon">
+                 <button id="buscarPokemon">Buscar</button>
             </div>
             <div class="Principal__pokemon__Resultado">
-               <p>Nome:</p>
-               <dive class="Principal__pokemon__Resultado_final">            
-                 <img src="" alt="">
+               <p id="resultado_nome" >Nome:</p>
+               <div class="Principal__pokemon__Resultado_final">            
+                 <img id="imagemPokemon" src="" alt="">
                </div>
             </div>               
         </div>                 
